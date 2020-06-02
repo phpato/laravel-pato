@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/citas',"CitaController@getCitas");
+Route::post('/cita',"CitaController@store");
+Route::put('/cita',"CitaController@update");
+Route::delete('/cita/{id}',"CitaController@destroy");
+Route::post('/evaluar_cita',"CitaController@evaluarCita");
