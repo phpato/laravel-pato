@@ -53,7 +53,7 @@
                                             </div>
 
                                             <div class="form-group">
-                                                <label>Hora: <b>{{cita.hourDate}}</b></label>
+                                                <label>Hora: <b>{{cita.hourDate + ":00"}}</b></label>
                                             </div>
 
                                             <div class="form-group">
@@ -321,7 +321,7 @@
                     {
                         label: 'Hora',
                         field: 'hour_date',
-                        type: 'number',
+                        type: 'text',
                     },
                     {
                         label: 'Fecha Cita',

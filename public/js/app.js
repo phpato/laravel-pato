@@ -2268,7 +2268,7 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         label: 'Hora',
         field: 'hour_date',
-        type: 'number'
+        type: 'text'
       }, {
         label: 'Fecha Cita',
         field: 'start_date',
@@ -78043,7 +78043,9 @@ var render = function() {
                             _c("div", { staticClass: "form-group" }, [
                               _c("label", [
                                 _vm._v("Hora: "),
-                                _c("b", [_vm._v(_vm._s(_vm.cita.hourDate))])
+                                _c("b", [
+                                  _vm._v(_vm._s(_vm.cita.hourDate + ":00"))
+                                ])
                               ])
                             ]),
                             _vm._v(" "),
